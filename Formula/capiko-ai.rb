@@ -5,21 +5,21 @@
 class CapikoAi < Formula
   desc "capiko-ai — mounts the capiko layer (skills, state, backups) onto the GitHub Copilot CLI."
   homepage "https://github.com/martinhg/capiko-ai"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/martinhg/capiko-ai/releases/download/v1.0.0/capiko-ai_1.0.0_darwin_amd64.tar.gz"
-      sha256 "808a8b8a8d58dee4905ace2cd5d33185a270993d613664f64db6d97d5b7c3a21"
+      url "https://github.com/martinhg/capiko-ai/releases/download/v1.1.0/capiko-ai_1.1.0_darwin_amd64.tar.gz"
+      sha256 "e81a51fedfe4670960d89c8e6147ffbe3fabd02aaa2b254a576b91765a3ee7dd"
 
       define_method(:install) do
         bin.install "capiko-ai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/martinhg/capiko-ai/releases/download/v1.0.0/capiko-ai_1.0.0_darwin_arm64.tar.gz"
-      sha256 "9276a29638d011e0b4a1ffceb60230eb2086c9b491e575331713e057e6ae5ed6"
+      url "https://github.com/martinhg/capiko-ai/releases/download/v1.1.0/capiko-ai_1.1.0_darwin_arm64.tar.gz"
+      sha256 "789a9aa27acbba8406209ac18b5be578ef98f55c19344a8aceee39dadff69249"
 
       define_method(:install) do
         bin.install "capiko-ai"
@@ -29,15 +29,15 @@ class CapikoAi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/martinhg/capiko-ai/releases/download/v1.0.0/capiko-ai_1.0.0_linux_amd64.tar.gz"
-      sha256 "137b55023badff7762a4feee43682523f94186f6fe6ead45f394b6ac2fbcb681"
+      url "https://github.com/martinhg/capiko-ai/releases/download/v1.1.0/capiko-ai_1.1.0_linux_amd64.tar.gz"
+      sha256 "445d2d8d5c8d9d44d46ccadbfe53058101e562415cd8f5ffa96d5f136857413c"
       define_method(:install) do
         bin.install "capiko-ai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/martinhg/capiko-ai/releases/download/v1.0.0/capiko-ai_1.0.0_linux_arm64.tar.gz"
-      sha256 "516427baa13b63ac9b410ee25b9568642cfa4c6e8cc33d47b4dad1c6aa621793"
+      url "https://github.com/martinhg/capiko-ai/releases/download/v1.1.0/capiko-ai_1.1.0_linux_arm64.tar.gz"
+      sha256 "896cb0ecde498ffdaa8a78e54113cb0e58de729f5e9106b99600ec180a3fe871"
       define_method(:install) do
         bin.install "capiko-ai"
       end
